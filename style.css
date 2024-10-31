@@ -1,0 +1,452 @@
+body { 
+    background-image: url(bgimg.jpg);
+    background-size: cover;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: aquamarine;
+    font-family: Verdana, sans-serif;
+    font-size: 16px;
+    padding: 10px;
+}
+
+
+img.logo {  
+    width: 15%; 
+    height: 10%;
+}
+
+img {
+    width: 100%; 
+    height: auto; 
+    border: 2px solid black;
+    border-radius: 20px;
+    margin: auto;
+}
+
+div.name {
+    color: black;
+    font-size: 60px;
+    font-weight: bold;
+    font-family: fantasy;
+    letter-spacing: 20px;
+    text-shadow: 5px 8px px black;
+    margin: 0;
+    padding: 0;
+}
+
+p.town {
+    font-size: 35px;
+    color: mediumaquamarine;
+    letter-spacing: 25px;
+    font-weight: bold;
+    text-shadow: 5px 8px 17px black;
+    margin: 0;
+    padding: 0;
+}
+
+
+div.district {  
+    font-size: 20px; 
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: aquamarine; 
+    font-weight: bold;
+    word-spacing: 20px;
+    padding-block: 0px;
+}
+
+div.motto {
+    color: aquamarine; 
+    font-size: 37px;
+    text-shadow: 2px 2px 5px white;
+    font-family: cursive ;
+}
+
+test {
+    border-left: 5px solid green;
+    background-color: #6b2e2e;
+    font-size: 50px;
+    border-radius: 20%;
+    cursor: no-drop;
+    box-shadow: 0 9px #999;
+}
+
+test:active{
+  box-shadow: 0 5px #666;
+  transform: translateY(43px)
+}
+
+.dots {
+  border: 17px solid white;
+  position:absolute;
+  border-radius: 18px;
+  display: inline-block;
+  margin: 0px 100px;
+  height: 15px;
+  width: 15px;
+}
+
+.dots:hover {
+  background-color: grey;
+  height: 15px;
+  width: 15px;
+}
+
+video {
+    border-radius: 20px;
+    border:  5px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+}
+
+input {
+  background-color: tan;
+  border-radius: 20px;
+  font-size: 25px;
+}
+
+nav {
+    background-color: black; 
+    padding: 10px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-top: 40px;
+}
+
+nav a {
+    color: white; 
+    text-decoration:none; 
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 20px; 
+    transition: background-color 0.3s, color 0.3s; 
+    font-family: 'Arial', sans-serif;
+}
+
+button.anim a:hover {
+    color: black; 
+    border-radius: 5px;
+}
+
+button.anim {
+    z-index: 1;
+  position: relative;
+  font-size: inherit;
+  font-family: inherit;
+  color: white;
+  padding: 0.5em 1em;
+  outline: none;
+  border: none;
+  background-color: black;
+  overflow: hidden;
+  transition: color 0.4s ease-in-out;
+}
+
+button.anim::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    background-color: #3cefff;
+    transform-origin: center;
+    transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
+    transition: transform 0.5s ease-in-out;
+}
+
+button.anim:hover {
+    cursor: pointer;
+    color: #161616;
+}
+
+button.anim:hover::before {
+    transform: translate3d(-50%, -50%, 0) scale3d(15, 15, 15);
+}
+
+.slideshow {
+    display: none;
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+
+.mySlides {
+    width: 40%; 
+    height: auto; 
+    border: 2px solid black;
+    border-radius: 20px;
+    margin: auto;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.text {
+  color: aquamarine;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .3} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .3} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+button.gallery a:hover {
+  color: black; 
+  border-radius: 5px;
+}
+
+button.gallery {
+  z-index: 1;
+position: relative;
+font-size: inherit;
+font-family: inherit;
+color: white;
+padding: 0.5em 1em;
+outline: none;
+border: none;
+background-color: black;
+overflow: hidden;
+transition: color 0.4s ease-in-out;
+}
+
+button.gallery::before {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  background-color: #3cefff;
+  transform-origin: center;
+  transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
+  transition: transform 0.5s ease-in-out;
+}
+
+button.gallery:hover {
+  cursor: pointer;
+  color: #161616;
+}
+
+button.gallery:hover::before {
+  transform: translate3d(-50%, -50%, 0) scale3d(15, 15, 15);
+}
+
+a:link, a:visited {
+  color: aquamarine;
+  text-decoration: none;
+}
+
+.vission {
+  font-size: 65px;
+  font-weight: bold;
+  color: #a8eb87;
+  margin-top: 70px;
+  float: left;
+  padding-left: 70px;
+  text-shadow: 2px 1px 10px black;
+}
+
+p.vission {
+  font-size: 30px;
+  margin: 15px;
+  color: aquamarine;
+  font-family:cursive;
+  letter-spacing:5px;
+}
+
+.mission {
+  font-size: 65px;
+  color: #a8eb87;
+  font-weight: bold;
+  float: right;
+  margin-top: 90px;
+  padding-left: 70px;
+  text-shadow: 2px 1px 10px black;
+}
+
+p.mission {
+  font-size: 30px;
+  color: aquamarine;
+  margin: 15px;
+  font-family:cursive;
+  letter-spacing:5px;
+}
+
+.motto2 {
+  font-size: 65px;
+  text-shadow: 2px 1px 10px black;
+  font-weight: bold;
+  color: #a8eb87;
+  margin-top: 70px;
+  float: left;
+  padding-left: 70px;
+  text-shadow: 2px 1px 10px black;
+}
+
+p.motto2 {
+  font-size: 30px;
+  margin: 15px;
+  color: aquamarine;
+  font-family:cursive;
+  letter-spacing:5px;
+}
+
+.cardcontainer {
+  clear: both;
+  color: black;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  transition-duration: 1s;
+  margin: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card:hover {
+  background-color: lightcoral;
+}
+
+.card::after {
+  background-color: black;
+  transition: 1s;
+}
+
+cite {
+  color: aqua;
+}
+
+.resize {
+  border: 2px solid blue;
+  border-radius: 9px;
+  padding: 20px;
+  margin: auto;
+  resize:both;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    background-color: lightgreen;
+  }
+}
+
+#leadership {
+  clear: both;
+  font-weight: bold;
+  text-shadow: 2px 1px 10px black;
+  font-size: 60px;
+  color: #a8eb87;
+  padding-top: 50px;
+  justify-content: center;
+  transition: transform 0.2s ease-in;
+}
+
+.leadership {
+  clear: both;
+  font-weight: bold;
+  font-size: 60px;
+  color: #a8eb87;
+  padding-top: 50px;
+  justify-content: center;
+  transition: transform 0.2s ease-in;
+  display: flex;
+}
+
+.lead {
+  width: 20vw;
+  height: auto;
+  justify-content: center;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.lead:hover {
+  transform: scale(1.2);
+}
+
+.leadtext {
+  color: aquamarine;
+  font-size: 15px;
+  justify-content: center;
+  font-weight: bold;
+  font-family: serif;
+  text-align: center;
+}
+
+.rg {
+  width: 40vw;
+  height: auto;
+  justify-content: center;
+  text-align: center;
+  border-radius: 50%;
+  margin: auto;
+  clear: both;
+}
+
+.p {
+  width: 20vw;
+  height: auto;
+  justify-content: center;
+  text-align: center;
+  border-radius: 50%;
+  margin: auto;
+  display: flex;
+}
+
+hr {
+  color: aquamarine;
+}
+
+.footer {
+  color: aquamarine;
+  clear: both;
+  padding-top: 20px;
+}
